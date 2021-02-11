@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  graphql:
+    image: 'akondiukdev/graphql-caliban-zio-scala:0.0.1-SNAPSHOT'
+    ports:
+      - '8080:8080'
+    network_mode: "host"
+#    depends_on:
+#      - mongo-db
+    environment:
+      MONGODB_USERNAME: akondiuk
+      MONGODB_PASSWORD: 'test1234'
+      MONGODB_NAME: 'gql-app'
+      MONGODB_COLLECTION: 'users_'
+#      MONGODB_PORT: '5432'
+#      API_HOST: '0.0.0.0'
