@@ -39,7 +39,7 @@ object Dependencies {
     dockerExposedPorts := Seq(8088),
     dockerBaseImage := "adoptopenjdk:11.0.5_10-jdk-hotspot",
     packageName in Docker := "graphql-caliban-zio-scala",
-    dockerUsername := Some("akondiukdev")
+    dockerUsername := Some("your_username")
     /*dockerCommands := {
       dockerCommands.value.flatMap {
         case ep @ ExecCmd("ENTRYPOINT", _*) =>

@@ -15,8 +15,6 @@ import zio.duration._
 
 object Api extends GenericSchema[UserService] {
 
-  //  case class Query(users: QueryArgs => UIO[List[UserView]])
-
   final case class FindUserArgs(firstName: String)
 
   final case class EditUserArgs(user: User)
@@ -30,8 +28,6 @@ object Api extends GenericSchema[UserService] {
                       findUsers: () => RIO[UserService, Seq[User]]
                     )
 
-  //  case class Mutations(addUser: AddingUser => UIO[Unit])
-  //  case class Mutations(editUser: AddingUser => IO[UserNotFound, User])
   case class Mutations(
                         @GQLDescription("Edit selected users")
                         editUser: EditUserArgs => RIO[UserService, Long],
