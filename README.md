@@ -1,6 +1,6 @@
 # poc-graphgl-zio
 
-###A simple POC repo to present GraphGL implementation with Caliban on ZIO stack.
+### A simple POC repo to present GraphGL implementation with Caliban on ZIO stack.
 
 ##### Libraries and frameworks used:
 * ZIO - is a library for asynchronous and concurrent programming that is based on pure functional programming
