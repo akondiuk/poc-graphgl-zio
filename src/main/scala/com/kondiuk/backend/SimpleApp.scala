@@ -17,7 +17,7 @@ import zio.blocking.Blocking
 import zio.clock.Clock
 import zio.console.{Console, putStrLn}
 import zio.interop.catz._
-import zio.{Layer, RIO, ZIO, _}
+import zio.{RIO, ZIO, _}
 
 import scala.concurrent.ExecutionContext
 
@@ -27,8 +27,6 @@ import scala.concurrent.ExecutionContext
 object SimpleApp extends CatsApp with GenericSchema[Console with Clock] {
 
   type AppTask[A] = RIO[ZEnv, A]
-
-  val userPersistence: Layer[Nothing, Configuration] = Configuration.live
 
   override def run(args: List[String]): URIO[zio.ZEnv, ExitCode] = program
 

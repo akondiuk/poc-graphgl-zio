@@ -24,7 +24,7 @@ object Api extends GenericSchema[UserService] {
   case class Queries(
                       @GQLDescription("Returns a user")
                       findUser: FindUserArgs => RIO[UserService, User],
-                      @GQLDescription("Returns all user")
+                      @GQLDescription("Returns all users")
                       findUsers: () => RIO[UserService, Seq[User]]
                     )
 
