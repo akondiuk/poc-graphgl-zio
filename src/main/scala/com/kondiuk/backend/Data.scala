@@ -14,5 +14,4 @@ object Data {
                  )
 
   case class UserNotFound(name: String) extends Throwable
-
 }

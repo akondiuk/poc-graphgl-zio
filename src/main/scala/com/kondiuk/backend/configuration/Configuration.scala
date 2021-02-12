@@ -21,7 +21,7 @@ object Configuration {
   /*val test: Layer[Nothing, Has[Service]] = ZLayer.succeed(new Service {
     val load: Task[Config] = Task.effectTotal(
       Config(ApiConfig("loacalhost", 8080),
-        DbConfigMongo("mongodb+srv://akondiuk:test1234@cluster0-fsuoa.mongodb.net/test?retryWrites=true&w=majority", "gql-app", "users_", "akondiuk", "test1234")))
+        DbConfigMongo("mongodb+srv://dev:test1234@cluster0-fsuoa.mongodb.net/test?retryWrites=true&w=majority", "gql-app", "users_", "test1234", "test1234")))
   })*/
 
   val apiConfig: ZIO[Has[ApiConfig], Throwable, ApiConfig] = ZIO.service
