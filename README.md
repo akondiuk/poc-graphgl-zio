@@ -13,11 +13,13 @@
 * From intellij Idea open SimpleApp.scala And run it.
 * From sbt console since I use the sbt-revolver plugin:
   * run reStart to start app in an incremental mode, on any class change it will automatically restart the server with changes applied
+    * when run locally you can use Postman scripts which located in the postman folder or use GraphiQl tool under: http://127.0.0.1:8088/graphiql
   * when you've done just run reStop
 
 ##### How to run tests
-* For intellij Idea:
-  * Install ZIO for Intellij plugin (it gives you an integrated test runner plus lots of flavours for refactoring)
+* From intellij Idea:
+  * Install ZIO for Intellij plugin - which is awailable in Intellij Idea plugins marketplace for free. It gives you an integrated test runner plus lots of flavours for refactoring.
   * open GraphQLExecutionSpec.scala And run it.
-  
 * From sbt console - just run test
+
+##### Postman scripts located in the postman folder
