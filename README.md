@@ -1,4 +1,4 @@
-# poc-graphql-zio
+# poc-graphql-zio (Work In Progress)
 
 ### A simple POC repo to present GraphQL implementation with Caliban on ZIO stack.
 
