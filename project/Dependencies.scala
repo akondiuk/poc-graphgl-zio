@@ -5,7 +5,9 @@ import com.typesafe.sbt.packager.Keys.{dockerBaseImage, dockerCommands, dockerEx
 import com.typesafe.sbt.packager.docker.ExecCmd
 
 object Dependencies {
+  //TODO upgrade to ZIO 2.0
   val ZioVersion = "1.0.0"
+  //TODO upgrade to v2.0.2
   val CalibanVersion = "0.9.1"
   val Http4sVersion = "0.21.7"
   val CirceVersion = "0.13.0"
